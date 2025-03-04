@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+section{
+    padding: 2rem 1rem;
+    text-align: center;
+}
+.usp-list{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+ul li{
+    list-style: none;
+}
+
+button{
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: none;
+    outline: none;
+    border: none;
+    margin: auto;
+    display: block;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+span{
+    color: greenyellow;
+    font-size: 2rem;
+    text-align: center;
+}
