@@ -1,13 +1,20 @@
-// const sectionId = document.querySelector('button').dataset.sectionId;
-// document.querySelector('button').addEventListener('click', function (e) {
-
-//   document.querySelector('span').innerHTML = sectionId;
+// new Splide('.splide').mount();
 
 
-// });
+class CustomSlider extends HTMLElement {
+    constructor() {
+        super();
+        this.splideNode = this.querySelector('.splide');
+        
+        this.splideOptions = JSON.parse(this.dataset.customSplideOptions) || {};
+    }
+    connectedCallback() { 
+        this.mountSplider();
+    }
+    mountSplider() {
+        const spideList = new Splide(this.splideNode, this.splideOptions)
+        spideList.mount();
+    }
+}
+customElements.define('custom-slider', CustomSlider);
 
-document.querySelectorAll('button').forEach((button,index) => {
-    button.addEventListener('click', function (e) {
-        document.querySelectorAll('span')[index].innerHTML = button.dataset.sectionId;
-    });
-})

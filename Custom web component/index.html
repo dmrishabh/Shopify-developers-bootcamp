@@ -5,108 +5,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <script src="./splide/splide.min.js" defer></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="./splide/splide.min.css">
+    <title>Splide With Component</title>
 </head>
 
 <body>
-
-    <!-- section usp -->
-    <style>
-        .usp--1 {
-            --color: rgb(0, 42, 132);
-            background-color: var(--color);
-        }
-    </style>
-    <section class="usp--1">
-        <ul class="usp-list">
-            <li class="usp-list-item">
-                <img src="https://images.pexels.com/photos/14366404/pexels-photo-14366404.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                    alt="" height="300px" width="300px" loading="lazy">
-            </li>
-            <li class="usp-list-item">
-                <img src="https://images.pexels.com/photos/14366404/pexels-photo-14366404.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                    alt="" height="300px" width="300px" loading="lazy">
-            </li>
-            <li class="usp-list-item">
-                <img src="https://images.pexels.com/photos/14366404/pexels-photo-14366404.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                    alt="" height="300px" width="300px" loading="lazy">
-            </li>
-            <li class="usp-list-item">
-                <img src="https://images.pexels.com/photos/14366404/pexels-photo-14366404.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                    alt="" height="300px" width="300px" loading="lazy">
-            </li>
-        </ul>
-        <button data-section-id="usp--1">Click me to see who are you</button>
-        <span></span>
-    </section>
-    <!-- section usp end -->
+    <!-- To make a component that we can reuse with lesser code -->
+    <!-- Section Custom slider -->
 
 
-    <!-- *********** -->
+    <custom-slider
+    data-custom-splide-options='{"type":"loop","perPage":1}'
+    >
+        <section class="splide" aria-label="Splide Basic HTML Example">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide"><img src="https://images.pexels.com/photos/1056251/pexels-photo-1056251.jpeg?auto=compress&cs=tinysrgb&w=1200" alt=""></li>
+                    <li class="splide__slide"><img src="https://images.pexels.com/photos/96938/pexels-photo-96938.jpeg?auto=compress&cs=tinysrgb&w=1200" ></li>
+                    <li class="splide__slide"><img src="https://images.pexels.com/photos/1056251/pexels-photo-1056251.jpeg?auto=compress&cs=tinysrgb&w=1200" alt=""></li>
+                    <li class="splide__slide"><img src="https://images.pexels.com/photos/96938/pexels-photo-96938.jpeg?auto=compress&cs=tinysrgb&w=1200" ></li>
+                </ul>
+            </div>
+        </section>
+    </custom-slider>
+   
 
+    <!-- Section Custom slider end -->
+   
+    <custom-slider  data-custom-splide-options='{"type":"loop","perPage":1}'>
+        <section class="splide" aria-label="Splide Basic HTML Example">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    <li class="splide__slide">Slide 01</li>
+                    <li class="splide__slide">Slide 02</li>
+                    <li class="splide__slide">Slide 03</li>
+                </ul>
+            </div>
+        </section>
+    </custom-slider>
 
-
-    <!-- section usp -->
-    <style>
-        .usp--2 {
-            --color: red;
-            background-color: var(--color);
-        }
-    </style>
-    <section class="usp--2">
-        <ul class="usp-list">
-            <li class="usp-list-item">
-                <img src="https://images.pexels.com/photos/14366404/pexels-photo-14366404.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                    alt="" height="300px" width="300px" loading="lazy">
-            </li>
-            <li class="usp-list-item">
-                <img src="https://images.pexels.com/photos/14366404/pexels-photo-14366404.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                    alt="" height="300px" width="300px" loading="lazy">
-            </li>
-            <li class="usp-list-item">
-                <img src="https://images.pexels.com/photos/14366404/pexels-photo-14366404.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                    alt="" height="300px" width="300px" loading="lazy">
-            </li>
-            <li class="usp-list-item">
-                <img src="https://images.pexels.com/photos/14366404/pexels-photo-14366404.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                    alt="" height="300px" width="300px" loading="lazy">
-            </li>
-        </ul>
-        <button data-section-id="usp--1">Click me to see who are you</button>
-        <span></span>
-    </section>
-    <!-- section usp end -->
-    <!-- section usp -->
-    <style>
-        .usp--3 {
-            --color: rgb(0, 255, 229);
-            background-color: var(--color);
-        }
-    </style>
-    <section class="usp--3">
-        <ul class="usp-list">
-            <li class="usp-list-item">
-                <img src="https://images.pexels.com/photos/14366404/pexels-photo-14366404.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                    alt="" height="300px" width="300px" loading="lazy">
-            </li>
-            <li class="usp-list-item">
-                <img src="https://images.pexels.com/photos/14366404/pexels-photo-14366404.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                    alt="" height="300px" width="300px" loading="lazy">
-            </li>
-            <li class="usp-list-item">
-                <img src="https://images.pexels.com/photos/14366404/pexels-photo-14366404.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                    alt="" height="300px" width="300px" loading="lazy">
-            </li>
-            <li class="usp-list-item">
-                <img src="https://images.pexels.com/photos/14366404/pexels-photo-14366404.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                    alt="" height="300px" width="300px" loading="lazy">
-            </li>
-        </ul>
-        <button data-section-id="usp--1">Click me to see who are you</button>
-        <span></span>
-    </section>
-    <!-- section usp end -->
-    <script src="script.js"></script>
+   
 </body>
 
 </html>
